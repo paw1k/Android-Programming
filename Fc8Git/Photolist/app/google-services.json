@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "299335321459",
+    "project_id": "photolist-a193b",
+    "storage_bucket": "photolist-a193b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299335321459:android:0d19639a60575779c3a706",
+        "android_client_info": {
+          "package_name": "edu.utap.photolist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3L3cbaQwxGda21Cnr_qJbeyUwpZI6IIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
