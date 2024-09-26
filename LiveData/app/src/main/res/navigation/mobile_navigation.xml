@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/emptyFragment"
+    >
+
+    <fragment
+        android:id="@+id/produceFragment"
+        android:name="edu.utap.livedata.ProduceFragment"
+        android:label="Producer"
+        tools:layout="@layout/fragment_main" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/consumeFragment"
+        android:name="edu.utap.livedata.ConsumeFragment"
+        android:label="Consumer"
+        tools:layout="@layout/fragment_main"
+        app:popUpTo="@+id/main_nav_graph"
+        app:popUpToInclusive="true"
+        >
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue="ERROR, title not set"
+            />
+    </fragment>
+    <!-- emptyFragment does not take an argument -->
+    <fragment
+        android:id="@+id/emptyFragment"
+        android:name="edu.utap.livedata.EmptyFragment"
+        android:label="EmptyFragment" />
+    <!-- These are global actions -->
+    <action
+        android:id="@+id/createProducer"
+        app:destination="@id/produceFragment"
+        >
+    <argument
+        android:name="title"
+        app:argType="string" />
+    </action>
+    <!-- Need a global action to transition to consumeFragment,
+         and one to transition to emptyFragment-->
+    <action
+        android:id="@+id/createEmptyFragment"
+        app:destination="@id/emptyFragment" />
+    <action
+        android:id="@+id/createConsumer"
+        app:destination="@id/consumeFragment"
+        >
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </action>
+
+</navigation>
