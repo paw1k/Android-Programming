@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mobile_navigation"
+        app:startDestination="@+id/playerFragment">
+
+    <!-- Navigation places the label in the Toolbar -->
+    <fragment
+            android:id="@+id/playerFragment"
+            android:name="musicplayer.cs371m.musicplayer.PlayerFragment"
+            android:label="Music Player"
+            tools:layout="@layout/player_fragment" />
+
+    <fragment
+            android:id="@+id/settingsFragment"
+            android:name="musicplayer.cs371m.musicplayer.SettingsFragment"
+            android:label="Settings"
+            tools:layout="@layout/settings_fragment" />
+
+</navigation>
