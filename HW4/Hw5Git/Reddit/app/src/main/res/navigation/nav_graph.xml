@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="edu.cs371m.reddit.ui.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeFragment_to_subreddits"
+            app:destination="@id/subreddits" />
+        <action
+            android:id="@+id/action_homeFragment_to_favorites"
+            app:destination="@id/favorites" />
+        <action
+            android:id="@+id/action_homeFragment_to_onePostFragment"
+            app:destination="@id/onePostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subreddits"
+        android:name="edu.cs371m.reddit.ui.subreddits.Subreddits"
+        android:label="Subreddits" />
+    <!--Add "@+id/favorites" and "@+id/onePostFragment" -->
+    <!--Also, an action from favorites to OnePost -->
+    <!--OnePost takes a "post" argument of type "edu.cs371m.reddit.api.RedditPost"-->
+
+    <fragment
+        android:id="@+id/favorites"
+        android:name="edu.cs371m.reddit.ui.Favorites"
+        android:label="FavoritesFragment" />
+
+    <fragment
+        android:id="@+id/onePostFragment"
+        android:name="edu.cs371m.reddit.ui.subreddits.OnePostFragment"
+        android:label="OnePostFragment" />
+
+    <!-- Define action from Favorites to OnePost -->
+    <action
+        android:id="@+id/action_favorites_to_onePostFragment"
+        app:destination="@id/onePostFragment" />
+
+    <!-- Define argument for OnePostFragment -->
+    <argument
+        android:name="post"
+        app:argType="edu.cs371m.reddit.api.RedditPost" />
+
+
+</navigation>
