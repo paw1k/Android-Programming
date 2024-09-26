@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "259940934027",
+    "project_id": "fit-track-16242",
+    "storage_bucket": "fit-track-16242.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259940934027:android:0660764320f78550c5cf8e",
+        "android_client_info": {
+          "package_name": "dev.almasum.fittrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl6yMwZACOwHQ8uM-B4DlHSkdPAYxMLeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
