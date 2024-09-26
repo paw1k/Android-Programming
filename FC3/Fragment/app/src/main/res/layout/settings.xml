@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--A switch is the right option for a Boolean choice -->
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/immersive_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Immersive mode"
+        />
+    <!--witchel: It doesn't make much sense for a spinner
+    to be true/false, but I wanted to demonstrate a custom spinner -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Show labels"
+        />
+    <!--witchel: It doesn't make much sense for a spinner
+    to be true/false, but I wanted to demonstrate a spinner -->
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/permute_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:padding="5dp"
+        android:textColor="#f51111"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FourImageFragment">
+
+    <fragment
+        android:id="@+id/FourImageFragment"
+        android:name="edu.utap.fragment.FourImageFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/four_image">
+
+        <!--XXX Write me.  You need an action -->
+        <action
+            android:id="@+id/action_FourImageFragment_to_OneImageFragment"
+            app:destination="@id/OneImageFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument
+                android:name="index"
+                app:argType="integer" />
+        </action>
+
+    </fragment>
+    <!-- When this dies via popBackStack, I can't get it to play a
+    fade_out animation -->
+    <fragment
+        android:id="@+id/OneImageFragment"
+        android:name="edu.utap.fragment.OneImageFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/one_image">
+        <argument
+            android:name="index"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="edu.utap.fragment.SettingsFragment"
+        android:label="SettingsFragment" />
+</navigation>

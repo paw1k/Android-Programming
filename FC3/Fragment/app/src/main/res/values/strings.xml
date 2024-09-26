@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fragment</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Four Image Fragment</string>
+    <string name="second_fragment_label">One Image Fragment</string>
+
+</resources>
