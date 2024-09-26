@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "963403981501",
+    "project_id": "fir-auth-55ee4",
+    "storage_bucket": "fir-auth-55ee4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963403981501:android:133d826d92d5a729ba4dd4",
+        "android_client_info": {
+          "package_name": "edu.utap.firebaseauth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfjBxFZbPLqhm7r1bAesdEMnWJAy-0ojo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
