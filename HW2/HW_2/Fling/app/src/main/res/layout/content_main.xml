@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/allContent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/scoreTV"
+        android:text="0"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:textSize="10pt"
+        android:gravity="center"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toTopOf="@+id/flingBut"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toStartOf="@+id/flingBut"/>
+
+    <Button
+        android:id="@+id/flingBut"
+        android:text="2.0"
+        android:background="#FFFFFF"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:textSize="10pt"
+        android:gravity="center"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scoreTV"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toStartOf="@+id/gameBut"/>
+
+    <Button
+        android:id="@+id/gameBut"
+        android:text="Jump"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toTopOf="@+id/flingBut"
+        app:layout_constraintStart_toEndOf="@+id/flingBut"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <View
+        android:id="@+id/frameB"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/frameS"
+        android:layout_width="12dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameBut"
+        app:layout_constraintBottom_toTopOf="@+id/frameB"/>
+
+    <View
+        android:id="@+id/frameE"
+        android:layout_width="12dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameBut"
+        app:layout_constraintBottom_toTopOf="@+id/frameB"/>
+
+    <View
+        android:id="@+id/frameT"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/gameBut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/puck"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FF006400"
+        app:layout_constraintTop_toTopOf="@+id/frameT"
+        app:layout_constraintBottom_toTopOf="@+id/frameB"
+        app:layout_constraintStart_toEndOf="@+id/frameS"
+        app:layout_constraintEnd_toStartOf="@+id/frameE"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
