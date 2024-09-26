@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="restaurant_type">
+        <item>Cuisine?</item>
+        <item>American (New)</item>
+        <item>Breakfast and Brunch</item>
+        <item>Burgers</item>
+        <item>Cajun</item>
+        <item>Delis</item>
+        <item>Dimsum</item>
+        <item>Hotdogs</item>
+        <item>Japanese</item>
+        <item>Tex-Mex</item>
+    </string-array>
+</resources>

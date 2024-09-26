@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/front_text"
+    style="?android:attr/spinnerItemStyle"
+    android:ellipsize="marquee"
+    android:textSize="18sp"
+    android:textColor="#808080"
+    android:text="[Restaurant Type...]"
+    android:inputType="text"
+    android:singleLine="true">
+    <!-- singleLine is deprecated, but needed here -->
+</TextView>
