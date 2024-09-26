@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/mainFragment">
+
+    <!-- A single fragment and a global action to pass it an argument -->
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="edu.cs371m.triviagame.ui.main.MainFragment"
+        android:label="Main"
+        tools:layout="@layout/main_fragment" >
+        <argument
+            android:name="questionNumber"
+            app:argType="integer" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_mainFragment"
+        app:destination="@id/mainFragment">
+        <argument
+            android:name="questionNumber"
+            app:argType="integer" />
+    </action>
+
+</navigation>
